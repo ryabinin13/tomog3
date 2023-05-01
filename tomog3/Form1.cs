@@ -112,7 +112,7 @@ namespace tomog3
             double t3 = Min(tLeft, tRight);
             double t4 = Max(tLeft, tRight);
 
-            textBoxPrint.Text = "";
+            
 
 
             if ((t3 > t2) | (t4 < t1))
@@ -182,7 +182,7 @@ namespace tomog3
             Imass.Clear();
             sources.Clear();
 
-            textBoxPrint.Text = " ";
+            
 
             Graphics g = CreateGraphics();
             g.Clear(Color.White);
@@ -214,12 +214,7 @@ namespace tomog3
                 sources.Add(m);
             }
             
-            textBoxPrint.Text = " ";
-
-            foreach (var item in Imass)
-            {
-                textBoxPrint.Text += item + " ";
-            }
+            
             
         }
         public void DrawGrafic()

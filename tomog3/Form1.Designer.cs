@@ -29,11 +29,10 @@ namespace tomog3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.buttonScan = new System.Windows.Forms.Button();
-            this.textBoxPrint = new System.Windows.Forms.TextBox();
             this.numericUpDownPhi = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownN = new System.Windows.Forms.NumericUpDown();
@@ -61,14 +60,6 @@ namespace tomog3
             this.buttonScan.Text = "жестко сканировать";
             this.buttonScan.UseVisualStyleBackColor = true;
             this.buttonScan.Click += new System.EventHandler(this.buttonScan_Click);
-            // 
-            // textBoxPrint
-            // 
-            this.textBoxPrint.Location = new System.Drawing.Point(-3, 514);
-            this.textBoxPrint.Multiline = true;
-            this.textBoxPrint.Name = "textBoxPrint";
-            this.textBoxPrint.Size = new System.Drawing.Size(110, 114);
-            this.textBoxPrint.TabIndex = 1;
             // 
             // numericUpDownPhi
             // 
@@ -161,19 +152,19 @@ namespace tomog3
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(707, 13);
             this.chart1.Name = "chart1";
-            series2.BorderWidth = 3;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.LegendText = "график";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.BorderWidth = 3;
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.LegendText = "график";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(692, 626);
             this.chart1.TabIndex = 11;
             this.chart1.Text = "chart1";
@@ -214,7 +205,6 @@ namespace tomog3
             this.Controls.Add(this.numericUpDownN);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDownPhi);
-            this.Controls.Add(this.textBoxPrint);
             this.Controls.Add(this.buttonScan);
             this.Name = "Form1";
             this.Text = "форма";
@@ -232,7 +222,6 @@ namespace tomog3
         #endregion
 
         private System.Windows.Forms.Button buttonScan;
-        private System.Windows.Forms.TextBox textBoxPrint;
         private System.Windows.Forms.NumericUpDown numericUpDownPhi;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownN;
